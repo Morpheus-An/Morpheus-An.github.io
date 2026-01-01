@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Tuo
-middle_name: 
+middle_name:
 last_name: An
 contact_note: >
   Feel free to reach out via email for research collaborations and academic discussions.
@@ -80,7 +80,6 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-
 
 # Pagination
 pagination:
