@@ -64,6 +64,17 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Education -->
+    {% if page.education %}
+      {% include education.liquid %}
+    {% endif %}
+
+    <!-- Awards -->
+    {% if page.awards %}
+      {% include awards.liquid %}
+    {% endif %}
+
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">
@@ -72,6 +83,7 @@ layout: default
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
+
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}

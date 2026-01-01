@@ -19,7 +19,7 @@ ninja.data = [
   },
   {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
   {%- for p in sorted_pages -%}
-    {%- if p.nav and p.autogen == null -%}
+    {%- if p.nav and p.autogen == null and p.search != false -%}
       {%- if p.dropdown -%}
         {%- for child in p.children -%}
           {%- unless child.title == 'divider' -%}
@@ -78,9 +78,11 @@ ninja.data = [
       },
     {%- endfor -%}
   {%- endif -%}
+  {%comment%}
   {%- for collection in site.collections -%}
     {%- if collection.label != 'posts' -%}
       {%- for item in collection.docs -%}
+        {%- if item.search != false -%}
         {
           {%- if item.inline -%}
             {%- assign title = item.content | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | escape | strip -%}
@@ -98,8 +100,10 @@ ninja.data = [
           {%- endunless -%}
         },
       {%- endfor -%}
+        {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
+  {%endcomment%}
   {%- if site.socials_in_search -%}
     {%- for social in site.data.socials -%}
       {%- case social[0] -%}
