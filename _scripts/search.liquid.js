@@ -99,8 +99,8 @@ ninja.data = [
             },
           {%- endunless -%}
         },
-      {%- endfor -%}
         {%- endif -%}
+      {%- endfor -%}
     {%- endif -%}
   {%- endfor -%}
   {%endcomment%}
