@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-01'
+  last_updated: '2026-04-24'
 papers:
   Rn30BUYAAAAJ:2osOgNQ5qMEC:
     citations: 0
@@ -13,11 +13,7 @@ papers:
     citations: 1
     title: Action-to-Action Flow Matching
     year: '2026'
-  Rn30BUYAAAAJ:qjMakFHDy7sC:
-    citations: 3
-    title: 'IoT-LLM: A framework for enhancing large language model reasoning from real-world sensor data'
-    year: '2026'
   Rn30BUYAAAAJ:u-x6o8ySG0sC:
-    citations: 51
+    citations: 54
     title: 'IoT-LLM: Enhancing Real-World IoT Task Reasoning with Large Language Models'
     year: '2026'
