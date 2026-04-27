@@ -1,19 +1,23 @@
 metadata:
-  last_updated: '2026-04-24'
+  last_updated: '2026-04-27'
 papers:
   Rn30BUYAAAAJ:2osOgNQ5qMEC:
     citations: 0
     title: Optimization-Guided Diffusion for Interactive Scene Generation
     year: '2025'
   Rn30BUYAAAAJ:9yKSN-GCB0IC:
-    citations: 33
+    citations: 34
     title: 'Efuf: Efficient fine-grained unlearning framework for mitigating hallucinations in multimodal large language models'
     year: '2024'
+  Rn30BUYAAAAJ:IjCSPb-OGe4C:
+    citations: 0
+    title: 'CompassAD: Intent-Driven 3D Affordance Grounding in Functionally Competing Objects'
+    year: '2026'
   Rn30BUYAAAAJ:UeHWp8X0CEIC:
     citations: 1
     title: Action-to-Action Flow Matching
     year: '2026'
   Rn30BUYAAAAJ:u-x6o8ySG0sC:
-    citations: 54
+    citations: 55
     title: 'IoT-LLM: Enhancing Real-World IoT Task Reasoning with Large Language Models'
     year: '2026'
