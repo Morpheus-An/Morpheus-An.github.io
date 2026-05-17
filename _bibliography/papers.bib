@@ -3,6 +3,67 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{an2026fwm,
+  abbr={Under Review},
+  title={Feedback World Model Enables Precise Guidance of Diffusion Policy},
+  author={An*, Tuo and Jia*, Jindou and Li, Gen and Li, Jingliang and Zhou, Chuhao and Liu, Pengfei and Lyu, Bofan and Bai, Jiaqi and Guo, Xinying and Li, Geng and Yang, Jianfei},
+  journal={arXiv preprint},
+  year={2026},
+  selected={true},
+  bibtex_show={true},
+  preview={feedback_wm.png},
+  website={https://lorenzo-0-0.github.io/Feedback_World_Model/},
+  annotation={Under Review}
+}
+
+@inproceedings{jia2026a2a,
+  abbr={RSS},
+  title={Action-to-Action Flow Matching},
+  author={Jia, Jindou and Li, Gen and Chen, Xiangyu and An, Tuo and Hu, Yuxuan and Li, Jingliang and Guo, Xinying and Yang, Jianfei},
+  booktitle={Proceedings of Robotics: Science and Systems (RSS)},
+  year={2026},
+  bibtex_show={true},
+  preview={a2a.png},
+  abstract={We introduce Action-to-Action Flow Matching (A2A), a policy-learning framework that frames imitation learning as a flow-matching problem directly in action space, mapping past actions to future actions conditioned on observations. Compared with regression-based and diffusion-based policies, A2A delivers more efficient sampling and stronger generalization in robot manipulation.},
+  pdf={https://arxiv.org/pdf/2602.07322},
+  code={https://github.com/JIAjindou/A2A_Flow_Matching},
+  website={https://lorenzo-0-0.github.io/A2A_Flow_Matching/},
+  google_scholar_id={UeHWp8X0CEIC},
+  annotation={Accepted at RSS 2026 - arXiv:2602.07322}
+}
+
+@article{hou2026worldmodel,
+  abbr={Survey},
+  title={World Model for Robot Learning: A Comprehensive Survey},
+  author={Hou*, Bohan and Li*, Gen and Jia*, Jindou and An*, Tuo and Guo*, Xinying and Leng, Sicong and Geng, Haoran and Ze, Yanjie and Harada, Tatsuya and Torr, Philip and Mees, Oier and Pollefeys, Marc and Liu, Zhuang and Wu, Jiajun and Abbeel, Pieter and Malik, Jitendra and Du, Yilun and Yang, Jianfei},
+  journal={arXiv preprint},
+  year={2026},
+  selected={true},
+  bibtex_show={true},
+  preview={world_model_survey.png},
+  abstract={A comprehensive survey on world models for robot learning. We organize the literature along three axes: world models that augment policies, world models that serve as simulators for reinforcement learning and evaluation, and world models for robotic video generation. We summarize recent progress, identify open challenges, and outline a roadmap toward foundation world models for embodied AI.},
+  pdf={https://arxiv.org/pdf/2605.00080},
+  code={https://github.com/NTUMARS/Awesome-World-Model-for-Robotics-Policy},
+  website={https://ntumars.github.io/wm-robot-survey/},
+  google_scholar_id={zYLM7Y9cAGgC},
+  annotation={Under Review - arXiv:2605.00080}
+}
+
+@article{li2026compassad,
+  abbr={Under Review},
+  title={CompassAD: Intent-Driven 3D Affordance Grounding in Functionally Competing Objects},
+  author={Li, Jingliang and Jia, Jindou and An, Tuo and Zhou, Chuhao and Chen, Xiangyu and Shan, Shilin and Ma, Boyu and Lyu, Bofan and Li, Gen and Yang, Jianfei},
+  journal={arXiv preprint},
+  year={2026},
+  bibtex_show={true},
+  preview={compassad.png},
+  abstract={We present CompassAD, an intent-driven 3D affordance grounding benchmark and method that targets functionally competing objects. The dataset comprises 88K QA pairs over 6.4K scenes across 105 object categories with 30 confusing pairs, and we validate the approach with real-world robotic deployment.},
+  pdf={https://arxiv.org/pdf/2604.02060},
+  code={https://github.com/Lorenzo-0-0/CompassAD-Intent-Driven-3D-Affordance-Grounding-in-Functionally-Competing-Objects},
+  google_scholar_id={IjCSPb-OGe4C},
+  annotation={Under Review - arXiv:2604.02060}
+}
+
 @inproceedings{li2025optimization,
   abbr={Under Review},
   title={Optimization-Guided Diffusion for Interactive Scene Generation},
@@ -10,9 +71,10 @@
   booktitle={arXiv preprint},
   year={2025},
   bibtex_show={true},
-  selected={true},
   preview={optimaztion.png},
   abstract={Realistic and diverse multi-agent driving scenes are crucial for evaluating autonomous vehicles. We present OMEGA, an optimization-guided, training-free framework that enforces structural consistency and interaction awareness during diffusion-based sampling from a scene generation model. Experiments on nuPlan and Waymo show that OMEGA improves generation realism, consistency, and controllability.},
+  pdf={https://arxiv.org/pdf/2512.07661},
+  website={https://opendrivelab.com/OMEGA/},
   google_scholar_id={2osOgNQ5qMEC},
   annotation={Under Review - arXiv:2512.07661}
 }
@@ -28,6 +90,8 @@
   bibtex_show={true},
   preview={iot-llm.png},
   abstract={This paper presents a novel approach to enhancing real-world IoT task reasoning with large language models. We demonstrate significant improvements in performance across various benchmarks.},
+  html={https://www.cell.com/patterns/fulltext/S2666-3899(25)00277-6},
+  code={https://github.com/NTUMARS/IoT-Agent},
   google_scholar_id={u-x6o8ySG0sC},
   annotation={Accepted at Patterns, Cell Press, as a Cover Paper}
 }
@@ -38,11 +102,12 @@
   author={Xing, Shangyu and Zhao, Fei and Wu, Zhen and An, Tuo and Chen, Weihao and Li, Chunhui and Zhang, Jianbing and Dai, Xinyu},
   booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
   year={2024},
-  selected={true},
   bibtex_show={true},
   preview={EFUF.png},
   abstract={Multimodal large language models (MLLMs) have attracted increasing attention in the past few years, but they may still generate descriptions that include objects not present in the corresponding images, a phenomenon known as object hallucination. To eliminate hallucinations, we propose an efficient fine-grained unlearning framework (EFUF), which can eliminate hallucinations without the need for paired data. Extensive experiments show that our method consistently reduces hallucinations while preserving the generation quality with modest computational overhead.},
-  google_scholar_id={u5HHmVD_uO8C},
+  pdf={https://arxiv.org/pdf/2402.09801},
+  code={https://github.com/starreeze/efuf},
+  google_scholar_id={9yKSN-GCB0IC},
   annotation={Accepted at EMNLP 2024}
 }
 

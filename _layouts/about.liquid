@@ -83,6 +83,13 @@ layout: default
       </div>
     {% endif %}
 
+    <!-- Visitor map (ClustrMaps) -->
+    <div class="clustrmaps-wrapper" style="text-align: center; margin-top: 1.5rem;">
+      <div style="display: inline-block; transform: scale(0.6); transform-origin: top center;">
+        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=hXKbn59wrtFGWZx8L7qiTiCorltRatfANtOXvt2fmxA"></script>
+      </div>
+    </div>
+
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
     {% endif %}
