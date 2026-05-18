@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am glad to join the MARS Lab as a PhD student in August 2025. Fighting for the future of AI! :rocket: :smile:
+I am glad to join the MARS Lab as a PhD student in August 2025. :rocket: :smile:
