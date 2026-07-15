@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-06-22'
+  last_updated: '2026-07-15'
 papers:
   Rn30BUYAAAAJ:2osOgNQ5qMEC:
     citations: 0
     title: Optimization-Guided Diffusion for Interactive Scene Generation
     year: '2025'
   Rn30BUYAAAAJ:9yKSN-GCB0IC:
-    citations: 40
+    citations: 45
     title: 'Efuf: Efficient fine-grained unlearning framework for mitigating hallucinations in multimodal large language models'
     year: '2024'
   Rn30BUYAAAAJ:IjCSPb-OGe4C:
@@ -14,26 +14,30 @@ papers:
     title: 'CompassAD: Intent-Driven 3D Affordance Grounding in Functionally Competing Objects'
     year: '2026'
   Rn30BUYAAAAJ:Tyk-4Ss8FVUC:
-    citations: 2
+    citations: 5
     title: Feedback World Model Enables Precise Guidance of Diffusion Policy
     year: '2026'
-  Rn30BUYAAAAJ:UeHWp8X0CEIC:
-    citations: 2
-    title: Action-to-Action Flow Matching
-    year: '2026'
   Rn30BUYAAAAJ:W7OEmFMy1HYC:
-    citations: 0
+    citations: 2
     title: 'MARS Policy: Multimodality Only When It Matters'
     year: '2026'
   Rn30BUYAAAAJ:Y0pCki6q_DkC:
-    citations: 0
+    citations: 3
     title: 'FLASH: Efficient Visuomotor Policy via Sparse Sampling'
     year: '2026'
+  Rn30BUYAAAAJ:roLk4NBRz8UC:
+    citations: 11
+    title: Action-to-action flow matching
+    year: '2026'
   Rn30BUYAAAAJ:u-x6o8ySG0sC:
-    citations: 65
+    citations: 74
     title: 'IoT-LLM: Enhancing Real-World IoT Task Reasoning with Large Language Models'
     year: '2026'
+  Rn30BUYAAAAJ:ufrVoPGSRksC:
+    citations: 0
+    title: 'APEX: Adaptive Policy Execution for Precise Manipulation'
+    year: '2026'
   Rn30BUYAAAAJ:zYLM7Y9cAGgC:
-    citations: 2
+    citations: 10
     title: 'World Model for Robot Learning: A Comprehensive Survey'
     year: '2026'
