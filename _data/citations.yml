@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-07-27'
+  last_updated: '2026-08-03'
 papers:
   Rn30BUYAAAAJ:2osOgNQ5qMEC:
     citations: 0
     title: Optimization-Guided Diffusion for Interactive Scene Generation
     year: '2025'
   Rn30BUYAAAAJ:9yKSN-GCB0IC:
-    citations: 46
+    citations: 24
     title: 'Efuf: Efficient fine-grained unlearning framework for mitigating hallucinations in multimodal large language models'
     year: '2024'
   Rn30BUYAAAAJ:IjCSPb-OGe4C:
@@ -26,11 +26,11 @@ papers:
     title: 'FLASH: Efficient Visuomotor Policy via Sparse Sampling'
     year: '2026'
   Rn30BUYAAAAJ:roLk4NBRz8UC:
-    citations: 11
+    citations: 12
     title: Action-to-action flow matching
     year: '2026'
   Rn30BUYAAAAJ:u-x6o8ySG0sC:
-    citations: 78
+    citations: 77
     title: 'IoT-LLM: Enhancing Real-World IoT Task Reasoning with Large Language Models'
     year: '2026'
   Rn30BUYAAAAJ:ufrVoPGSRksC:
@@ -38,6 +38,6 @@ papers:
     title: 'APEX: Adaptive Policy Execution for Precise Manipulation'
     year: '2026'
   Rn30BUYAAAAJ:zYLM7Y9cAGgC:
-    citations: 16
+    citations: 18
     title: 'World Model for Robot Learning: A Comprehensive Survey'
     year: '2026'
