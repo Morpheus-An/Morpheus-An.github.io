@@ -1,3 +1,5 @@
+# scholarly imports bibtexparser v1 APIs removed in v2
+bibtexparser<2
 nbconvert
 pyyaml
 scholarly
