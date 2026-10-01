@@ -3,11 +3,11 @@
 
 @string{aps = {American Physical Society,}}
 
-@article{an2026fwm,
-  abbr={Under Review},
+@inproceedings{an2026fwm,
+  abbr={NeurIPS},
   title={Feedback World Model Enables Precise Guidance of Diffusion Policy},
   author={An*, Tuo and Jia*, Jindou and Li, Gen and Li, Jingliang and Zhou, Chuhao and Liu, Pengfei and Lyu, Bofan and Bai, Jiaqi and Guo, Xinying and Li, Geng and Yang, Jianfei},
-  journal={arXiv preprint},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2026},
   selected={true},
   bibtex_show={true},
@@ -16,7 +16,23 @@
   pdf={https://arxiv.org/pdf/2605.15705},
   website={https://lorenzo-0-0.github.io/Feedback_World_Model/},
   google_scholar_id={Tyk-4Ss8FVUC},
-  annotation={Under Review - arXiv:2605.15705}
+  annotation={Accepted at NeurIPS 2026 - arXiv:2605.15705}
+}
+
+@inproceedings{bai2026flash,
+  abbr={NeurIPS},
+  title={FLASH: Efficient Visuomotor Policy via Sparse Sampling},
+  author={Bai*, Jiaqi and Jia*, Jindou and Hu, Yuxuan and Li, Gen and Chen, Xiangyu and An, Tuo and Zuo, Kuangji and Yang, Jianfei},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2026},
+  bibtex_show={true},
+  preview={flash.png},
+  abstract={Generative models such as diffusion and flow matching have become dominant paradigms for visuomotor policy learning, yet their reliance on iterative denoising incurs high inference latency incompatible with real-time robotic control. We present Fast Legendre-polynomial Action policy via Sparse History-anchored flow (FLASH Policy), which replaces discrete action-chunk generation with continuous Legendre polynomial trajectory representation. Specifically, by fitting expert demonstrations under sparse temporal sampling, FLASH enables a single inference to cover a significantly extended action horizon. To further accelerate generation, FLASH initiates the flow matching process from history polynomial coefficients rather than uninformative Gaussian noise, shortening the transport distance and enabling accurate single-step inference. Moreover, analytic polynomial differentiation directly provides desired velocity feed-forward signals to the torque controller without numerical approximation. Extensive experiments on five simulated and two real-world manipulation tasks demonstrate that FLASH achieves state-of-the-art success rates (≥92% across all tasks), a per-episode inference time of 31.40 ms (up to 175× faster than diffusion policies and 18× faster than prior flow matching policies), up to 4× faster training convergence than ACT, and 5× to 7× reduction in controller tracking error compared to discrete-action baselines.},
+  pdf={https://arxiv.org/pdf/2605.15492},
+  code={https://github.com/B1ue-Jay/FLASH},
+  website={https://b1ue-jay.github.io/FLASH/},
+  google_scholar_id={Y0pCki6q_DkC},
+  annotation={Accepted at NeurIPS 2026 - arXiv:2605.15492}
 }
 
 @article{jia2026marspolicy,
@@ -47,25 +63,25 @@
   pdf={https://arxiv.org/pdf/2602.07322},
   code={https://github.com/JIAjindou/A2A_Flow_Matching},
   website={https://lorenzo-0-0.github.io/A2A_Flow_Matching/},
-  google_scholar_id={UeHWp8X0CEIC},
+  google_scholar_id={roLk4NBRz8UC},
   annotation={Accepted at RSS 2026 - arXiv:2602.07322}
 }
 
 @article{hou2026worldmodel,
-  abbr={Survey},
+  abbr={IJRR},
   title={World Model for Robot Learning: A Comprehensive Survey},
   author={Hou*, Bohan and Li*, Gen and Jia*, Jindou and An*, Tuo and Guo*, Xinying and Leng, Sicong and Geng, Haoran and Ze, Yanjie and Harada, Tatsuya and Torr, Philip and Mees, Oier and Pollefeys, Marc and Liu, Zhuang and Wu, Jiajun and Abbeel, Pieter and Malik, Jitendra and Du, Yilun and Yang, Jianfei},
-  journal={arXiv preprint},
+  journal={The International Journal of Robotics Research (IJRR)},
   year={2026},
   selected={true},
   bibtex_show={true},
   preview={world_model_survey.png},
   abstract={A comprehensive survey on world models for robot learning. We organize the literature along three axes: world models that augment policies, world models that serve as simulators for reinforcement learning and evaluation, and world models for robotic video generation. We summarize recent progress, identify open challenges, and outline a roadmap toward foundation world models for embodied AI.},
-  pdf={https://arxiv.org/pdf/2605.00080},
+  html={https://journals.sagepub.com/eprint/STK7QKDPTVANRVK8EEPG/full},
   code={https://github.com/NTUMARS/Awesome-World-Model-for-Robotics-Policy},
   website={https://ntumars.github.io/wm-robot-survey/},
   google_scholar_id={zYLM7Y9cAGgC},
-  annotation={Under Review - arXiv:2605.00080}
+  annotation={Accepted at The International Journal of Robotics Research (IJRR)}
 }
 
 @article{li2026compassad,
@@ -126,7 +142,7 @@
   abstract={Multimodal large language models (MLLMs) have attracted increasing attention in the past few years, but they may still generate descriptions that include objects not present in the corresponding images, a phenomenon known as object hallucination. To eliminate hallucinations, we propose an efficient fine-grained unlearning framework (EFUF), which can eliminate hallucinations without the need for paired data. Extensive experiments show that our method consistently reduces hallucinations while preserving the generation quality with modest computational overhead.},
   pdf={https://arxiv.org/pdf/2402.09801},
   code={https://github.com/starreeze/efuf},
-  google_scholar_id={9yKSN-GCB0IC},
+  google_scholar_id={hqOjcs7Dif8C},
   annotation={Accepted at EMNLP 2024}
 }
 
