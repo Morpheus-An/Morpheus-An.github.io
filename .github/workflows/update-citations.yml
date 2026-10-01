@@ -10,6 +10,9 @@ on:
 jobs:
   update-citations:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # push citations.yml
+      actions: write # trigger the deploy workflow
 
     steps:
       - name: Checkout repository
@@ -58,6 +61,7 @@ jobs:
           else
             echo "❌ Citation update script failed with exit code $status (started at $start_time, ended at $end_time)."
             echo "❌ Citation update script failed with exit code $status." >> $GITHUB_STEP_SUMMARY
+            echo "::warning::Citation update script failed with exit code $status"
           fi
           set -e
 
@@ -92,10 +96,21 @@ jobs:
           echo "🔧 Git configured."
 
       - name: Commit and push if changed
+        id: push
         run: |
           git add _data/citations.yml
-          git diff --staged --quiet || (
+          if git diff --staged --quiet; then
+            echo "pushed=false" >> $GITHUB_OUTPUT
+          else
             echo "📤 Committing and pushing changes..."
             git commit -m "Update Google Scholar citations"
             git push
-          )
+            echo "pushed=true" >> $GITHUB_OUTPUT
+          fi
+
+      # Pushes made with GITHUB_TOKEN don't trigger other workflows, so start the deploy explicitly
+      - name: Trigger site deploy
+        if: steps.push.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref ${{ github.ref_name }}
