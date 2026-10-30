@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-10-26'
+  last_updated: '2026-10-30'
 papers:
   Rn30BUYAAAAJ:2osOgNQ5qMEC:
     citations: 2
     title: Optimization-Guided Diffusion for Interactive Scene Generation
     year: '2025'
   Rn30BUYAAAAJ:8k81kl-MbHgC:
-    citations: 101
+    citations: 103
     title: 'IoT-LLM: A framework for enhancing large language model reasoning from real-world sensor data'
     year: '2026'
   Rn30BUYAAAAJ:IjCSPb-OGe4C:
@@ -46,6 +46,6 @@ papers:
     title: 'APEX: Adaptive Policy Execution for Precise Manipulation'
     year: '2026'
   Rn30BUYAAAAJ:zYLM7Y9cAGgC:
-    citations: 46
+    citations: 49
     title: 'World Model for Robot Learning: A Comprehensive Survey'
     year: '2026'
