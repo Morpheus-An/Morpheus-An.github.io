@@ -247,6 +247,23 @@
   <script defer src="{{ '/assets/js/open-panel-analytics-setup.js' | relative_url }}"></script>
   <script async defer src="https://openpanel.dev/op1.js"></script>
 {% endif %}
+{% if site.enable_statcounter_analytics %}
+  <!-- StatCounter (invisible tracker; visitor log with IPs is in the StatCounter dashboard) -->
+  <script type="text/javascript">
+    var sc_project = {{ site.statcounter_project }};
+    var sc_invisible = 1;
+    var sc_security = '{{ site.statcounter_security }}';
+  </script>
+  <script async src="https://www.statcounter.com/counter/counter.js"></script>
+  <noscript>
+    <img
+      src="https://c.statcounter.com/{{ site.statcounter_project }}/0/{{ site.statcounter_security }}/1/"
+      alt=""
+      referrerpolicy="no-referrer-when-downgrade"
+      style="display: none"
+    >
+  </noscript>
+{% endif %}
 
 {% if site.enable_progressbar %}
   <!-- Scrolling Progress Bar -->
