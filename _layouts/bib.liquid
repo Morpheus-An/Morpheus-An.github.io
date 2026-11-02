@@ -326,13 +326,26 @@
               {% elsif site.data.citations.papers[publication_key] %}
                 {% assign citation_count = site.data.citations.papers[publication_key].citations %}
               {% else %}
+                {% assign citation_found = false %}
                 {% for paper in site.data.citations.papers %}
                   {% assign paper_key = paper[0] %}
                   {% if paper_key contains entry.google_scholar_id %}
                     {% assign citation_count = paper[1].citations %}
+                    {% assign citation_found = true %}
                     {% break %}
                   {% endif %}
                 {% endfor %}
+                {% comment %} Scholar re-keys a paper when it merges versions, so fall back to matching by title {% endcomment %}
+                {% unless citation_found %}
+                  {% assign entry_title_key = entry.title | downcase | strip %}
+                  {% for paper in site.data.citations.papers %}
+                    {% assign paper_title_key = paper[1].title | downcase | strip %}
+                    {% if paper_title_key == entry_title_key %}
+                      {% assign citation_count = paper[1].citations %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+                {% endunless %}
               {% endif %}
 
               <img
