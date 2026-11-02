@@ -1,10 +1,14 @@
 metadata:
-  last_updated: '2026-10-30'
+  last_updated: '2026-11-02'
 papers:
   Rn30BUYAAAAJ:2osOgNQ5qMEC:
     citations: 2
     title: Optimization-Guided Diffusion for Interactive Scene Generation
     year: '2025'
+  Rn30BUYAAAAJ:3fE2CSJIrl8C:
+    citations: 0
+    title: 'MOSS: Mode-Oriented Source Shaping for Robot Flow Matching Policies'
+    year: '2026'
   Rn30BUYAAAAJ:8k81kl-MbHgC:
     citations: 103
     title: 'IoT-LLM: A framework for enhancing large language model reasoning from real-world sensor data'
@@ -37,6 +41,10 @@ papers:
     citations: 49
     title: 'Efuf: Efficient fine-grained unlearning framework for mitigating hallucinations in multimodal large language models'
     year: '2024'
+  Rn30BUYAAAAJ:kNdYIx-mwKoC:
+    citations: 0
+    title: 'TOPS: Reshaping Flow Source and Transport for Multi-Task Robot Manipulation'
+    year: '2026'
   Rn30BUYAAAAJ:roLk4NBRz8UC:
     citations: 34
     title: Action-to-action flow matching
@@ -46,6 +54,6 @@ papers:
     title: 'APEX: Adaptive Policy Execution for Precise Manipulation'
     year: '2026'
   Rn30BUYAAAAJ:zYLM7Y9cAGgC:
-    citations: 49
+    citations: 51
     title: 'World Model for Robot Learning: A Comprehensive Survey'
     year: '2026'

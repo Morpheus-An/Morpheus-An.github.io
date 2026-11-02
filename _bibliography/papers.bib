@@ -3,6 +3,40 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{an2026tops,
+  abbr={Under Review},
+  title={TOPS: Reshaping Flow Source and Transport for Multi-Task Robot Manipulation},
+  author={An, Tuo and Zhou, Chuhao and Dong, Jiahua and Li, Jingliang and Bai, Jiaqi and Jia, Jindou and Yang, Jianfei},
+  journal={arXiv preprint},
+  year={2026},
+  selected={true},
+  bibtex_show={true},
+  preview={tops.png},
+  abstract={Flow-based policies for language-conditioned multi-task manipulation commonly share a single Gaussian source prior and a common linear transport path across tasks. However, reliably executing multiple tasks with distinct motion requirements remains challenging for a shared policy. We introduce TOPS (Task-Oriented Priors and Schedules), which adapts the flow source prior and interpolation schedule to each task without modifying the network architecture. TOPS first constructs multimodal task sources from reverse-mapped expert action sequences, allowing language instructions to select where generation begins. Guided by source-target covariance mismatch, it then slows the transition toward expert actions early in denoising and accelerates it later along directions requiring expansion. Under a Gaussian endpoint model, our analysis shows that this schedule adjustment can lower an upper bound on velocity-prediction risk. Experiments on LIBERO, LIBERO-Plus, and CALVIN demonstrate improved performance across in-distribution, perturbation and cross-environment settings, alongside better data efficiency. Using one integration step, TOPS raises LIBERO-10 success from 53.44% to 69.67% compared with ten-step Standard Flow Matching (FM), while reducing inference time to approximately one-sixth of the baseline. TOPS also yields consistent gains when transferred to the large-scale flow-based π0.5 policy across all four evaluated settings. Real-world experiments further demonstrate improved task success, including an increase from 20% with standard FM to 80% with TOPS on the upper-drawer opening task.},
+  pdf={https://arxiv.org/pdf/2610.36694},
+  code={https://github.com/NTUMARS/TOPS},
+  website={https://ntumars.github.io/TOPS/},
+  google_scholar_id={kNdYIx-mwKoC},
+  annotation={Under Review - arXiv:2610.36694}
+}
+
+@article{zuo2026deltaflow,
+  abbr={Under Review},
+  title={Δ Flow Matching for Robot Foundation Models},
+  author={Zuo*, Kuangji and An*, Tuo and Guo, Xinying and Li, Gen and Zhao, Mengfei and Bai, Jiaqi and Lyu, Bofan and Yu, Zhuoyuan and Yang, Jinghan and Li, Jiayi and Jia, Jindou and Yang, Jianfei},
+  journal={arXiv preprint},
+  year={2026},
+  selected={true},
+  bibtex_show={true},
+  preview={delta_flow.png},
+  abstract={Flow matching is a common generative recipe for robot foundation models. Vision-language-action models (VLAs) generate action chunks, while world-action models (WAMs) additionally generate future visual states. Both start generation from a fixed Gaussian prior, despite temporal continuity between past and future states and actions. This requires costly training and iterative sampling, especially for WAMs with an additional visual branch. We introduce Δ-flow, which constructs the source from recent history with mild noise rather than from a fixed Gaussian prior. This moves the source closer to the target, reducing transport to a small residual Δ that can be learned efficiently and enables single-step inference. We integrate Δ-flow into the VLA policy π0.5 and the WAM policies ImageWAM and Fast-WAM. On LIBERO, ImageWAM reaches 90% success in one epoch rather than six, and Fast-WAM reaches 95% in two epochs rather than eight. With LoRA fine-tuning, π0.5 exceeds its baseline's five-epoch performance after one epoch. Single-step inference gives 1.54×, 2.49×, and 4.45× speedups on π0.5, ImageWAM, and Fast-WAM, respectively. It preserves action smoothness, achieving a 4.5× reduction in action jerk compared with one-step Gaussian sampling. Δ-flow reaches state-of-the-art generalization performance on LIBERO-Plus. Action-history sources can be applied to pretrained WAM policies without retraining. Replacing the Gaussian action source at inference largely preserves task success with a single sampling step and can slightly improve it. We further study how action representation and visual information in action learning affect history-to-future prediction in Δ-flow. These results show that Δ-flow is simple yet effective, improving the efficiency and generalization of robot foundation models.},
+  pdf={https://arxiv.org/pdf/2610.15794},
+  code={https://github.com/NTUMARS/delta-flow-matching},
+  website={https://zuo-kuangji.github.io/delta-flow/},
+  google_scholar_id={MXK_kJrjxJIC},
+  annotation={Under Review - arXiv:2610.15794}
+}
+
 @inproceedings{an2026fwm,
   abbr={NeurIPS},
   title={Feedback World Model Enables Precise Guidance of Diffusion Policy},
@@ -84,6 +118,48 @@
   annotation={Accepted at The International Journal of Robotics Research (IJRR)}
 }
 
+@article{ma2026moss,
+  abbr={Under Review},
+  title={MOSS: Mode-Oriented Source Shaping for Robot Flow Matching Policies},
+  author={Ma, Zirun and Jia, Jindou and An, Tuo and Bai, Jiaqi and Dong, Jiahua and Yang, Jianfei},
+  journal={arXiv preprint},
+  year={2026},
+  bibtex_show={true},
+  preview={moss.png},
+  abstract={In robotic manipulation, the same observation often admits multiple feasible actions. Generative policies such as diffusion and flow matching naturally capture such multimodal behaviors, yet which mode is executed is left to random sampling and cannot be actively controlled. We propose Mode-Oriented Source Shaping (MOSS), which turns mode selection into an explicit choice of where generation starts. We first reveal, both empirically and theoretically, that deterministic flow transport induces mode-dependent structure in the source space. Under ideal deterministic ODE transport, distinct behavioral modes have distinct source-space preimages, while practical approximation errors can blur their boundaries due to imbalanced data, limited model capacity, and few inference steps. Motivated by this source-space structure, MOSS constructs semantically aligned mode-specific Gaussian sources that encode mode identity in the initial noise. A modality-strength estimator predicts the local degree of multimodality, which adaptively controls the geometry of the mode-specific sources. It contracts them toward a shared Gaussian where behaviors are similar and separates them near behavioral branching points. During deployment, the desired behavior is selected at inference simply by sampling from the corresponding component. Across 6 simulated and 3 real-world manipulation tasks, MOSS steers to the target mode up to 100% of the time with high task success, recovers minority modes at over 90% guidance rate under a 10:90 imbalance dataset, and surpasses mode-conditioned flow policy by 43.3 points of guidance rate on real robots.},
+  pdf={https://arxiv.org/pdf/2610.22193},
+  google_scholar_id={3fE2CSJIrl8C},
+  annotation={Under Review - arXiv:2610.22193}
+}
+
+@article{zhao2026apex,
+  abbr={Under Review},
+  title={APEX: Adaptive Policy Execution for Precise Manipulation},
+  author={Zhao, Mengfei and Jiang, Chenxi and An, Tuo and Jia, Jindou and Yang, Jianfei},
+  journal={arXiv preprint},
+  year={2026},
+  bibtex_show={true},
+  preview={apex.png},
+  abstract={Modern imitation learning methods, including visuomotor and Vision-Language-Action (VLA) policies, typically output high-level action references that are executed by low-level controllers. However, the absence of higher-order reference signals, together with the policy's lack of awareness of the underlying low-level control dynamics during training, inevitably induces an execution gap. As a result, realized actions deviate systematically from policy-commanded ones, with a critical impact on precision-sensitive manipulation. Prior work either modifies the policy architecture or the low-level controller, both requiring intrusive changes to the pretrained policy or packaged controller. This raises a natural question: when the policy and controller are both treated as inaccessible black boxes, can we bridge the execution gap? We propose Adaptive Policy Execution (APEX), a plug-and-play framework inserted between the policy and the controller that reconstructs a dynamically feasible reference from policy outputs and adapts at test-time according to low-level state feedback, with a provable convergence guarantee. Extensive empirical studies show that APEX reduces controller-induced tracking error by 41.2% on demonstration replay and improves manipulation success by 4.8–25.8 percentage points across four visuomotor and VLA policy classes.},
+  pdf={https://arxiv.org/pdf/2606.16504},
+  google_scholar_id={ufrVoPGSRksC},
+  annotation={Under Review - arXiv:2606.16504}
+}
+
+@article{li2026occamtoken,
+  abbr={Under Review},
+  title={OccamToken: Efficient VLM Inference with Training-Free and Budget-Adaptive Token Pruning},
+  author={Li, Geng and Chen, Guohao and Chen, Ting and Shan, Shilin and Zuo, Kuangji and Lyu, Bofan and An, Tuo and Li, Gen and Yang, Jianfei},
+  journal={arXiv preprint},
+  year={2026},
+  bibtex_show={true},
+  preview={occamtoken.png},
+  abstract={Vision-language models (VLMs) rely on long visual token sequences for visual understanding, making the prefill stage expensive in both computation and memory. Most existing pruning methods follow an absolute-ranking paradigm, assigning importance scores to visual tokens and retaining a fixed top-K subset. In this work, we argue that this paradigm is fundamentally brittle: attention sinks distort token importance rankings, while image redundancy and query-dependent visual evidence make fixed token budgets unreliable across inputs. We propose OccamToken, a training-free framework that replaces absolute token ranking with register-anchored relative evidence testing. Instead of asking which tokens are globally important, OccamToken evaluates whether a visual token provides information beyond a register-based reference. Our key insight is that register tokens naturally absorb low-information attention patterns, making them a stable reference for identifying genuinely informative visual evidence. Based on this principle, OccamToken performs both image-adaptive redundancy pruning and query-adaptive relevance pruning through dynamic thresholds derived from register attention. Across LLaVA-NeXT, LLaVA-v1.5, and Qwen3-VL, OccamToken consistently improves the accuracy-efficiency trade-off without additional training. Notably, on LLaVA-NeXT, it reduces 2,880 visual tokens to approximately 40 while preserving over 93% of the original accuracy, enabling stable visual token compression even in the extreme 1.4% retention regime.},
+  pdf={https://arxiv.org/pdf/2605.29657},
+  google_scholar_id={UebtZRa9Y70C},
+  annotation={Under Review - arXiv:2605.29657}
+}
+
 @article{li2026compassad,
   abbr={Under Review},
   title={CompassAD: Intent-Driven 3D Affordance Grounding in Functionally Competing Objects},
@@ -117,7 +193,7 @@
 
 @article{an2024iot,
   abbr={Cell Press},
-  title={Iot-llm: Enhancing real-world iot task reasoning with large language models},
+  title={IoT-LLM: A Framework for Enhancing Large Language Model Reasoning from Real-World Sensor Data},
   author={An, Tuo and Zhou, Yunjiao and Zou, Han and Yang, Jianfei},
   journal={Patterns, Cell Press (Cover Paper)},
   year={2025},
@@ -127,7 +203,7 @@
   abstract={This paper presents a novel approach to enhancing real-world IoT task reasoning with large language models. We demonstrate significant improvements in performance across various benchmarks.},
   html={https://www.cell.com/patterns/fulltext/S2666-3899(25)00277-6},
   code={https://github.com/NTUMARS/IoT-Agent},
-  google_scholar_id={u-x6o8ySG0sC},
+  google_scholar_id={8k81kl-MbHgC},
   annotation={Accepted at Patterns, Cell Press, as a Cover Paper}
 }
 
