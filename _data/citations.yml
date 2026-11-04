@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-11-02'
+  last_updated: '2026-11-04'
 papers:
   Rn30BUYAAAAJ:2osOgNQ5qMEC:
     citations: 2
@@ -30,11 +30,11 @@ papers:
     title: 'OccamToken: Efficient VLM Inference with Training-Free and Budget-Adaptive Token Pruning'
     year: '2026'
   Rn30BUYAAAAJ:W7OEmFMy1HYC:
-    citations: 6
+    citations: 8
     title: 'MARS Policy: Multimodality Only When It Matters'
     year: '2026'
   Rn30BUYAAAAJ:Y0pCki6q_DkC:
-    citations: 8
+    citations: 10
     title: 'FLASH: Efficient Visuomotor Policy via Sparse Sampling'
     year: '2026'
   Rn30BUYAAAAJ:hqOjcs7Dif8C:
@@ -46,7 +46,7 @@ papers:
     title: 'TOPS: Reshaping Flow Source and Transport for Multi-Task Robot Manipulation'
     year: '2026'
   Rn30BUYAAAAJ:roLk4NBRz8UC:
-    citations: 34
+    citations: 35
     title: Action-to-action flow matching
     year: '2026'
   Rn30BUYAAAAJ:ufrVoPGSRksC:
@@ -54,6 +54,6 @@ papers:
     title: 'APEX: Adaptive Policy Execution for Precise Manipulation'
     year: '2026'
   Rn30BUYAAAAJ:zYLM7Y9cAGgC:
-    citations: 51
+    citations: 53
     title: 'World Model for Robot Learning: A Comprehensive Survey'
     year: '2026'
