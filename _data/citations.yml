@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-11-07'
+  last_updated: '2026-11-08'
 papers:
   Rn30BUYAAAAJ:2osOgNQ5qMEC:
     citations: 2
@@ -58,6 +58,6 @@ papers:
     title: 'APEX: Adaptive Policy Execution for Precise Manipulation'
     year: '2026'
   Rn30BUYAAAAJ:zYLM7Y9cAGgC:
-    citations: 57
+    citations: 58
     title: 'World Model for Robot Learning: A Comprehensive Survey'
     year: '2026'
