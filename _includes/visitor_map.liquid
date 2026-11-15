@@ -1,0 +1,13 @@
+{% comment %}
+  Visitor globe. include.full=true renders the open, full-size version with the
+  country / source / browser breakdown (used on the /visitors/ page).
+{% endcomment %}
+{% if site.visitor_map.enabled %}
+  <div class="visitor-map" data-full="{% if include.full %}true{% else %}false{% endif %}">
+    {% unless include.full %}
+      <button type="button" class="visitor-map-toggle" aria-expanded="false">🌍 Where are my visitors?</button>
+    {% endunless %}
+    <div class="visitor-map-globe" {% unless include.full %}hidden{% endunless %}></div>
+    <div class="visitor-map-summary" {% unless include.full %}hidden{% endunless %}></div>
+  </div>
+{% endif %}

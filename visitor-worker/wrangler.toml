@@ -1,0 +1,12 @@
+name = "visitor-map"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+[vars]
+ALLOWED_ORIGINS = "https://morpheus-an.github.io,http://localhost:8080"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "visitor-map"
+database_id = "97cf43a7-5bc9-46fd-a7d8-596bac7a723a"

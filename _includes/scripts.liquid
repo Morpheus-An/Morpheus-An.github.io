@@ -265,6 +265,37 @@
   </noscript>
 {% endif %}
 
+{% if site.visitor_map.enabled %}
+  <!-- Visitor map: record this visit once per browser session (not on localhost, not for the owner) -->
+  <script>
+    window.VISITOR_MAP = {
+      url: "{{ site.visitor_map.worker_url }}",
+      pageUrl: "{{ '/visitors/' | relative_url }}",
+      countriesUrl: "{{ '/assets/json/countries.geojson' | relative_url }}",
+      globeJs: "{{ site.third_party_libraries.globe-gl.url.js }}",
+      globeIntegrity: "{{ site.third_party_libraries.globe-gl.integrity.js }}",
+    };
+    (function () {
+      try {
+        var local = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) && !/[?&]vtest\b/.test(location.search);
+        if (local || localStorage.getItem("vm_owner") || sessionStorage.getItem("vm_rec")) return;
+        var collect =
+          window.VISITOR_MAP.url.replace(/\/$/, "") +
+          "/collect?ref=" +
+          encodeURIComponent(document.referrer || "") +
+          "&p=" +
+          encodeURIComponent(location.pathname);
+        fetch(collect, { method: "POST", mode: "cors", keepalive: true })
+          .then(function (r) {
+            if (r.ok) sessionStorage.setItem("vm_rec", "1");
+          })
+          .catch(function () {});
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="{{ '/assets/js/visitor-map.js' | relative_url | bust_file_cache }}"></script>
+{% endif %}
+
 {% if site.enable_progressbar %}
   <!-- Scrolling Progress Bar -->
   <script defer src="{{ '/assets/js/progress-bar.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>

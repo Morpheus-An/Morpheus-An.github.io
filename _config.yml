@@ -75,6 +75,11 @@ openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX
 statcounter_project: 13364408 # your StatCounter project ID (sc_project, digits only)
 statcounter_security: ee9bb882 # your StatCounter security code (sc_security)
 
+# Visitor globe ("Where are my visitors?") backed by the Cloudflare Worker in visitor-worker/
+visitor_map:
+  enabled: true
+  worker_url: https://visitor-map.morpheus-an.workers.dev
+
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: # your google-site-verification ID (Google Search Console)
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
@@ -184,6 +189,7 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - visitor-worker/
 keep_files:
   - CNAME
   - .nojekyll
@@ -480,6 +486,12 @@ third_party_libraries:
       js: "https://cdn.jsdelivr.net/npm/leaflet@{{version}}/dist/leaflet.min.js"
       js_map: "https://cdn.jsdelivr.net/npm/leaflet@{{version}}/dist/leaflet.js.map"
     version: "1.9.4"
+  globe-gl:
+    integrity:
+      js: "sha256-LD5EXATRISFZEKiWiLlgkcinIHHBIqT4MAgaObY2yUw="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/globe.gl@{{version}}/dist/globe.gl.min.js"
+    version: "2.46.2"
   lightbox2:
     integrity:
       css: "sha256-uypRbsAiJcFInM/ndyI/JHpzNe6DtUNXaWEUWEPfMGo="

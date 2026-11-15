@@ -1,0 +1,171 @@
+/*******************************************************************************
+ * Visitor globe, /visitors/ breakdown and the owner-only visit log
+ ******************************************************************************/
+
+.visitor-map {
+  text-align: center;
+  margin-top: 1.5rem;
+
+  .visitor-map-toggle {
+    background: none;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    padding: 0.35rem 1.1rem;
+    color: var(--global-text-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition:
+      border-color 0.2s,
+      color 0.2s;
+
+    &:hover,
+    &:focus-visible {
+      border-color: var(--global-theme-color);
+      color: var(--global-theme-color);
+    }
+  }
+
+  .visitor-map-globe {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    height: 320px;
+    margin: 0.75rem auto 0;
+    cursor: grab;
+  }
+
+  &[data-full="true"] .visitor-map-globe {
+    max-width: none;
+    // Keep the box no taller than it is wide, so the sphere isn't clipped on phones
+    height: min(70vh, 560px, calc(100vw - 2rem));
+    margin-top: 0;
+  }
+
+  .visitor-map-loading {
+    padding-top: 140px;
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+  }
+
+  .visitor-map-summary {
+    margin-top: 0.5rem;
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+  }
+
+  .visitor-map-more {
+    display: inline-block;
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+  }
+
+  .visitor-map-cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+
+  .visitor-map-col {
+    h4 {
+      margin-bottom: 0.5rem;
+      color: var(--global-text-color);
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    ul {
+      max-height: 22rem;
+      margin: 0;
+      padding: 0;
+      overflow-y: auto;
+      list-style: none;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.2rem 0;
+      border-bottom: 1px solid var(--global-divider-color);
+      color: var(--global-text-color);
+      font-size: 0.9rem;
+    }
+
+    .visitor-map-empty {
+      color: var(--global-text-color-light);
+    }
+  }
+}
+
+.visitor-map-label {
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.visitor-owner {
+  scroll-margin-top: 5rem; // clear the fixed navbar
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background: var(--global-card-bg-color);
+
+  .visitor-owner-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+
+    span {
+      flex: 1;
+      color: var(--global-text-color-light);
+      font-size: 0.85rem;
+    }
+
+    button {
+      background: none;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 4px;
+      padding: 0.15rem 0.6rem;
+      color: var(--global-text-color);
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+  }
+
+  .visitor-owner-table {
+    max-height: 70vh;
+    overflow: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+  }
+
+  th,
+  td {
+    padding: 0.3rem 0.5rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  th {
+    position: sticky;
+    top: 0;
+    background: var(--global-card-bg-color);
+  }
+
+  .visitor-owner-ip {
+    font-family: monospace;
+  }
+}
