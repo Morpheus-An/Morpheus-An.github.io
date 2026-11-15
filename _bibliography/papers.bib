@@ -37,6 +37,23 @@
   annotation={Under Review - arXiv:2610.15794}
 }
 
+@article{jia2026odepolicy,
+  abbr={Under Review},
+  title={ODE Policy: Robot Learning via Action Dynamics, Not Actions},
+  author={Jia*, Jindou and Li*, Jingliang and Zuo*, Kuangji and An*, Tuo and Hu, Yuxuan and Zhao, Mengfei and Lyu, Bofan and Bai, Jiaqi and Zhu, Daoyuan and Dai, Hengyu and Zhang, Junpeng and Yang, Jianfei},
+  journal={arXiv preprint},
+  year={2026},
+  selected={true},
+  bibtex_show={true},
+  preview={ode_policy.png},
+  abstract={Most robot policies, whether trained by imitation learning (IL) or reinforcement learning (RL), map observations to action values at discrete control steps and leave the continuity of physical motion to be learned implicitly. We propose ODE policy, which learns the dynamics of the action rather than the action itself. A neural ordinary differential equation (ODE) learns the vector field of the action by matching the integrated actions to the targets over short action chunks in IL and single control steps in RL. A lightweight diversity head captures multi-modal behavior by randomizing the direction of the field. At deployment, each action is integrated from the previous one, so the executed trajectory is continuous by construction. We evaluate it as a visuomotor policy, as the action head of vision-language-action (VLA) and world action models (WAMs), and as the actor of model-based RL against 14 baselines on unimanual, bimanual, dexterous, locomotion, and loco-manipulation tasks. In IL, against flow matching, it reaches 5.9× the success, 5.4× the generalization, and 3.9× the mode balance after one epoch, and generates actions 10.8× faster. It mostly moves more smoothly than human demonstrations. On 14 real-world tasks across single-arm, dual-arm, dexterous, and humanoid robots, it achieves the highest success rate. In RL, it further speeds up SuperMimic for humanoid motion tracking and smooths its actions. Efficient in learning, data, parameters, and execution, ODE policy offers a promising path to scaling robot learning.},
+  pdf={https://arxiv.org/pdf/2611.01729},
+  code={https://github.com/NTUMARS/ODE-POLICY},
+  website={https://ntumars.github.io/ODE/},
+  google_scholar_id={KlAtU1dfN6UC},
+  annotation={Under Review - arXiv:2611.01729}
+}
+
 @inproceedings{an2026fwm,
   abbr={NeurIPS},
   title={Feedback World Model Enables Precise Guidance of Diffusion Policy},
@@ -101,6 +118,21 @@
   annotation={Accepted at RSS 2026 - arXiv:2602.07322}
 }
 
+@inproceedings{li2025optimization,
+  abbr={ECCV},
+  title={Optimization-Guided Diffusion for Interactive Scene Generation},
+  author={Li, Shihao and Ye, Naisheng and Li, Tianyu and Chitta, Kashyap and An, Tuo and Su, Peng and Wang, Boyang and Liu, Haiou and Lv, Chen and Li, Hongyang},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2026},
+  bibtex_show={true},
+  preview={optimaztion.png},
+  abstract={Realistic and diverse multi-agent driving scenes are crucial for evaluating autonomous vehicles. We present OMEGA, an optimization-guided, training-free framework that enforces structural consistency and interaction awareness during diffusion-based sampling from a scene generation model. Experiments on nuPlan and Waymo show that OMEGA improves generation realism, consistency, and controllability.},
+  pdf={https://arxiv.org/pdf/2512.07661},
+  website={https://opendrivelab.com/OMEGA/},
+  google_scholar_id={2osOgNQ5qMEC},
+  annotation={Accepted at ECCV 2026 - arXiv:2512.07661}
+}
+
 @article{hou2026worldmodel,
   abbr={IJRR},
   title={World Model for Robot Learning: A Comprehensive Survey},
@@ -116,6 +148,22 @@
   website={https://ntumars.github.io/wm-robot-survey/},
   google_scholar_id={zYLM7Y9cAGgC},
   annotation={Accepted at The International Journal of Robotics Research (IJRR)}
+}
+
+@article{an2024iot,
+  abbr={Cell Patterns},
+  title={IoT-LLM: A Framework for Enhancing Large Language Model Reasoning from Real-World Sensor Data},
+  author={An, Tuo and Zhou, Yunjiao and Zou, Han and Yang, Jianfei},
+  journal={Cell, Patterns (Cover Paper)},
+  year={2026},
+  selected={true},
+  bibtex_show={true},
+  preview={iot-llm.png},
+  abstract={This paper presents a novel approach to enhancing real-world IoT task reasoning with large language models. We demonstrate significant improvements in performance across various benchmarks.},
+  html={https://www.cell.com/patterns/fulltext/S2666-3899(25)00277-6},
+  code={https://github.com/NTUMARS/IoT-Agent},
+  google_scholar_id={8k81kl-MbHgC},
+  annotation={Published in Cell, Patterns as a Cover Paper}
 }
 
 @article{ma2026moss,
@@ -175,38 +223,6 @@
   annotation={Under Review - arXiv:2604.02060}
 }
 
-@inproceedings{li2025optimization,
-  abbr={Under Review},
-  title={Optimization-Guided Diffusion for Interactive Scene Generation},
-  author={Li, Shihao and Ye, Naisheng and Li, Tianyu and Chitta, Kashyap and An, Tuo and Su, Peng and Wang, Boyang and Liu, Haiou and Lv, Chen and Li, Hongyang},
-  booktitle={arXiv preprint},
-  year={2025},
-  bibtex_show={true},
-  preview={optimaztion.png},
-  abstract={Realistic and diverse multi-agent driving scenes are crucial for evaluating autonomous vehicles. We present OMEGA, an optimization-guided, training-free framework that enforces structural consistency and interaction awareness during diffusion-based sampling from a scene generation model. Experiments on nuPlan and Waymo show that OMEGA improves generation realism, consistency, and controllability.},
-  pdf={https://arxiv.org/pdf/2512.07661},
-  website={https://opendrivelab.com/OMEGA/},
-  google_scholar_id={2osOgNQ5qMEC},
-  annotation={Under Review - arXiv:2512.07661}
-}
-
-
-@article{an2024iot,
-  abbr={Cell Press},
-  title={IoT-LLM: A Framework for Enhancing Large Language Model Reasoning from Real-World Sensor Data},
-  author={An, Tuo and Zhou, Yunjiao and Zou, Han and Yang, Jianfei},
-  journal={Patterns, Cell Press (Cover Paper)},
-  year={2025},
-  selected={true},
-  bibtex_show={true},
-  preview={iot-llm.png},
-  abstract={This paper presents a novel approach to enhancing real-world IoT task reasoning with large language models. We demonstrate significant improvements in performance across various benchmarks.},
-  html={https://www.cell.com/patterns/fulltext/S2666-3899(25)00277-6},
-  code={https://github.com/NTUMARS/IoT-Agent},
-  google_scholar_id={8k81kl-MbHgC},
-  annotation={Accepted at Patterns, Cell Press, as a Cover Paper}
-}
-
 @inproceedings{xing2024efuf,
   abbr={EMNLP},
   title={EFUF: Efficient Fine-grained Unlearning Framework for Mitigating Hallucinations in Multimodal Large Language Models},
@@ -221,5 +237,4 @@
   google_scholar_id={hqOjcs7Dif8C},
   annotation={Accepted at EMNLP 2024}
 }
-
 
