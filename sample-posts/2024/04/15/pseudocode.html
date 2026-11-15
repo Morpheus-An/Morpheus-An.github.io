@@ -56,6 +56,31 @@
     var sc_project = 13364408;
     var sc_invisible = 1;
     var sc_security = 'ee9bb882';
-  </script> <script async src="https://www.statcounter.com/counter/counter.js"></script> <noscript> <img src="https://c.statcounter.com/13364408/0/ee9bb882/1/" alt="" referrerpolicy="no-referrer-when-downgrade" style="display: none"> </noscript> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
+  </script> <script async src="https://www.statcounter.com/counter/counter.js"></script> <noscript> <img src="https://c.statcounter.com/13364408/0/ee9bb882/1/" alt="" referrerpolicy="no-referrer-when-downgrade" style="display: none"> </noscript> <script>
+    window.VISITOR_MAP = {
+      url: "https://visitor-map.morpheus-an.workers.dev",
+      pageUrl: "/visitors/",
+      countriesUrl: "/assets/json/countries.geojson",
+      globeJs: "https://cdn.jsdelivr.net/npm/globe.gl@2.46.2/dist/globe.gl.min.js",
+      globeIntegrity: "sha256-LD5EXATRISFZEKiWiLlgkcinIHHBIqT4MAgaObY2yUw=",
+    };
+    (function () {
+      try {
+        var local = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) && !/[?&]vtest\b/.test(location.search);
+        if (local || localStorage.getItem("vm_owner") || sessionStorage.getItem("vm_rec")) return;
+        var collect =
+          window.VISITOR_MAP.url.replace(/\/$/, "") +
+          "/collect?ref=" +
+          encodeURIComponent(document.referrer || "") +
+          "&p=" +
+          encodeURIComponent(location.pathname);
+        fetch(collect, { method: "POST", mode: "cors", keepalive: true })
+          .then(function (r) {
+            if (r.ok) sessionStorage.setItem("vm_rec", "1");
+          })
+          .catch(function () {});
+      } catch (e) {}
+    })();
+  </script> <script defer src="/assets/js/visitor-map.js?a71386ba2665fb2803dc6d0d5b85f8a0"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
     addBackToTop();
   </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> </body> </html>
