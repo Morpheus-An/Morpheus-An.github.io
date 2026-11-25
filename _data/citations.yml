@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-11-24'
+  last_updated: '2026-11-25'
 papers:
   Rn30BUYAAAAJ:2osOgNQ5qMEC:
     citations: 2
@@ -54,10 +54,10 @@ papers:
     title: Action-to-action flow matching
     year: '2026'
   Rn30BUYAAAAJ:ufrVoPGSRksC:
-    citations: 0
+    citations: 1
     title: 'APEX: Adaptive Policy Execution for Precise Manipulation'
     year: '2026'
   Rn30BUYAAAAJ:zYLM7Y9cAGgC:
-    citations: 67
+    citations: 68
     title: 'World Model for Robot Learning: A Comprehensive Survey'
     year: '2026'
